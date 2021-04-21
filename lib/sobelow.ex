@@ -359,6 +359,7 @@ defmodule Sobelow do
   end
 
   defp get_template_meta(filename) do
+    IO.inspect(filename)
     meta_funs = Parse.get_meta_template_funs(filename)
     raw = meta_funs.raw
     ast = meta_funs.ast
